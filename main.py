@@ -32,7 +32,7 @@ def check_all_messages(message):
     #------------------------------------------Responses-------------------------------------------------------------
     response('Hello!',['hello','hi','heyo','sup','hey'], single_response=True)
     response('I\'m doing fine, and you?',['how','are','you','doing'], required_words=['how'])
-    response('Thank you!',['i','love','code','palace'],required_words=['code','palace'])
+    response('Thank you!',['i','love','code','palace'],required_words=['i','love'])
     response(long.R_EATING,['what','you','eat'], required_words=['you','eat'])
 
     best_match=max(highest_prob_list, key=highest_prob_list.get) # type: ignore
